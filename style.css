@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Poppins", sans-serif;
+    color:aliceblue;
+    background-color: #000000;
+}
+.temp{
+    font-size: 14px;
+}
+.clock,.internet {
+    display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.count img{
+    width:40px;
+    height:40px;
+   
+}
+.battery{
+    display: flex;
+    align-items: center;
+    height:80px;
+   
+}
+.battery img{
+     width:40px;
+    height:40px;
+}
+.machine{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.frist_container{
+    margin-bottom: 20px;
+}
+.Siri{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 50px;
+    background-color: #000000;
+    box-shadow: 5px 5px 10px rgb(120, 27, 220),
+     -5px 5px 10px rgb(120, 27, 220);;
+
+}
+.jarvis_setup{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  flex-direction: column; 
+  position: absolute;
+  top:20%;
+  left: 20%;
+  width:100%;
+  max-width: 800px;
+  font-size: 13px;
+  color: #000000;
+  margin-left: 50px;
+  background-color: #9bb1e2;
+   display: none;
+   z-index: 9999;
+ 
+}
+
+h2{
+    text-align: center;
+}
+.count img{
+    margin-bottom: 10px;
+    width:50px;
+    height:50px;
+   
+}
+.personal_info{
+    
+     display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    gap:30px;
+    width:100%;
+    width: 700px;
+    padding:20px;
+    
+}
+.cross{
+    position: absolute;
+    top:1%;
+    right: 2%;
+    font-size: 20px;
+   
+}
+#sub_btn{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 200px;
+   height: 35px;
+   border-radius: 20px;
+   color: #ffff;
+   background-color: #000000;
+}
+.robot{
+    width: 300px;
+    height: 300px;
+    
+}
+#start_jarvis_btn img{
+     width:50px;
+     height:50px;
+}
+.personal_info div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+label{
+    color: #000000;
+    font-size: 20px;
+  text-align: left;
+
+}
+input{
+    font-size: 18px;
+    width: 30vw;
+    color:black;
+    outline: none;
+    border:none;
+    background-color:#9bb1e2 ;
+    border-bottom: 3px solid black;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.messages{
+    position: absolute;
+    bottom:1%;
+    left:50%;
+    transform: translate(-50%,0);
+    width: 100%;
+     max-width: 400px;
+    max-height: 600px;
+     overflow-y: auto;
+     overflow-x: hidden;
+  padding: 10px 15px 15px 15px; /* 👈 space on left-right to prevent cut */
+    box-sizing: border-box; /* 👈 ensures padding doesn't exceed width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom:15px;
+    z-index: 1000;
+    scrollbar-width: thin; /* Firefox */
+    /* background-color: #9bb1e2; */
+   
+}
+.messages::-webkit-scrollbar{
+    /* display:none; */
+     width: 8px; /* Chrome, Safari */
+  background: transparent;
+}
+.usermsg{
+    text-align: right;
+    width: 300px;
+    color:rgb(113, 113, 235);
+}
+.jmsg{
+  text-align:left;
+  margin-top: 5px;
+  width: 300px;
+  color: rgb(245,61,61);
+}
+
+
+
+.commands{
+    display:none;
+    width: 300px;
+    background-color: #ffff;
+}
+.commands p{
+    color:rgb(197,0,0)
+}
+.bottom_class{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+   
+    
+    
+   
+}
+.User_intro{
+    width:200px;
+    height: 90px;
+   
+}
+
+#commandsDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  font-weight: bold;
+ display: none; 
+  z-index: 1000;
+}
+
+#commandsDiv p {
+  margin: 8px 0;
+}
+
+#closeCmd{
+    color:#000000;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+.personal_info{
+    gap:30px;
+    width:100%;
+    width: 350px;
+    padding:10px;
+}
+.jarvis_setup{
+   width:100%;
+  max-width: 400px;
+  font-size: 12px;
+margin-left: 10px;
+ 
+}
+label{
+   font-size: 13px;
+ }
+ input{
+    font-size: 18px;
+    width: 25vw;
+    
+    
+}
+ .robot{
+    display: none;
+ }
+
+ .Siri{
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+.usermsg{
+width: 245px;
+}    
+.jmsg{
+width: 245px;
+  
+}
+.profile{
+    display: none;
+}
+
+
+
+}
+
+
+@media (max-width: 767px) {
+  body {
+  background-color: #2f1919;
+  }
+  .robot{
+    display: none;
+ }
+  .Siri{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+   
+   
+}
+ .temp {
+    display: none !important;
+  }
+  .count img{
+    width:30px;
+    height:30px;
+   
+}
+#start_jarvis_btn img{
+     width:40px;
+     height:40px;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.messages{
+position: absolute;
+bottom:1%;
+left:60%;
+font-size: 12px;
+width: 100%;
+max-width: 250px;
+
+}
+.bottom_class{
+    width: 30%;
+   
+}
+.battery{
+    display: none;
+}
+.usermsg{
+width: 245px;
+}    
+.jmsg{
+width: 245px;
+  
+}
+.commands{
+    width: 300px;
+}
+.profile{
+    display: none;
+}
+
+
+}
