@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shophia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- <h1>hi,we are building Shophia</h1> -->
+     <audio src="Siri.mp3" id="j_intro"></audio>
+    <audio src="power up.mp3" id="turn_on"></audio>
+
+    <div class="machine">
+            <div class="frist_container">
+
+            <div class="clock count">
+            <img src="imgbin.png" alt="not-show">
+            <p id="time"></p>
+            </div>
+            <!-- ------------------------------------- -->
+            <div class="internet count">
+             <img src="wifi.png" alt="wifi">
+             <p id="internet"></p>
+            </div>
+            <!-- ----------------------------- -->
+             <div id="start_jarvis_btn" class="count">
+             <img src="elevator.png" alt="siri start">
+            </div>
+
+            <div class="profile">
+             <img src="contact-card.png" alt="contact card">
+             </div>
+
+             <div class="count">
+           <img src="command (1).png" alt="command" id="commandIcon" style="cursor:pointer;">
+                </div>
+
+
+            </div>
+            
+            <!-- -------------------------------------- -->
+            <div class="battery count">
+              <img src="icons8-battery-48.png" >
+              <p id="Battery"> <span class="charging"></span></p>
+            </div>
+            <!-- -------------------------------------------- -->
+             <div>
+              <div class="User_intro"></div>
+              <div class="temp">
+               <p id="location"></p>
+               <p id="country"></p>
+               <p id="weatherT"></p>
+               <p id="weatherD"></p>
+              <img src="" alt="">
+               <p id="oTemp"></p>
+              <p id="feelLikeTemp"></p>
+               <p id="minT"></p>
+               <p id="maxT"></p>
+           </div>
+             </div>
+              
+          <!-- --------------------------- -->
+           
+    </div>
+
+   <!-- you can write your info -->
+    <div class="jarvis_setup in_middle hide_on_small">
+     <span class="cross">&#10006;</span>
+      <div class="personal_info">
+        <h2>FILL  YOUR  PERSONAL INFORMATION</h2>
+        <div>
+        <label for="">Your Name</label>
+        <input type="text" />
+      </div>
+    <div>
+       <label for="">Your Bio</label>
+      <input type="text" />
+    </div>
+     <div>
+       <label for="">Your Location</label>
+      <input type="text" />
+     </div>
+       <div>
+      <label for="">Instagram Profile</label>
+      <input type="text" />
+       </div>
+    <div>
+       <label for="">Twitter Profile</label>
+      <input type="text" />
+    </div>
+      <div>
+        <label for="">GitHub Profile</label>
+      <input type="text" />
+      </div>
+    </div>
+      <button id="sub_btn">Submit</button>
+      </div>
+      
+    
+    <div class="bottom_class">
+    <video class="Siri" src="3674527071-preview.mp4" autoplay loop muted></video>
+    <div class="messages">
+    
+    </div>
+     <!-- <div class="commands in_middle"></div> -->
+    <img class="robot"  src="download.gif" alt="robot">
+    </div>
+   
+  <br>
+      <div class="commands" id="commandsDiv">
+  <span class="cross" id="closeCmd">&#10006;</span>
+  <p>hello siri</p>
+  <p>siri how are you</p>
+  <p>open youtube</p>
+  <p>open google</p>
+  <p>open firebase / open fire base</p>
+  <p>open github</p>
+  <p>open my github profile</p>
+  <p>search for &lt;anything&gt;</p>
+  <p>search youtube for &lt;song/video name&gt;</p>
+  <p>what time is it</p>
+  <p>tell me the time</p>
+  <p>what is today's date</p>
+  <p>tell me the date</p>
+  <p>check battery</p>
+  <p>check internet</p>
+</div>
+    <!-- ------------------- -->
+    <button id="start" style="display: none;">vr start</button>
+    <button id="stop" style="display: none;">vr stop</button>
+    <button id="speak" style="display: none;">Speak out</button>
+</body>
+</html>
